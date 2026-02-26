@@ -158,7 +158,7 @@ async def handle_callbacks(client, callback_query: CallbackQuery):
         if data == "contact_support":
             contact_text = (
                 "📞 **Contact Support**\n\n"
-                f"👤 **Username:** @{@sc4med}\n\n"
+                f"👤 **Username:** {@sc4med}\n\n"
                 "Click the button below to message support:"
             )
             await message.edit_text(
