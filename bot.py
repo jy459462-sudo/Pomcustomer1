@@ -17,15 +17,15 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Your Credentials
-BOT_TOKEN = "83731702988"
+BOT_TOKEN = "8670119672:AAGhWpmQHROLFJwHg1PDQ2oeBO2JJMqBtWA"
 API_ID = 6435225
 API_HASH = "4e984ea35f854762dcde906dce426c2d"
-MONGODB_URI = "mongodb+srv://userbot:userbot"
+MONGODB_URI = "mongodb+srv://kebefal214_db_user:QL7C9fzm9UKhmx1r@cluster0.wenb2lo.mongodb.net/?appName=Cluster0"
 DB_NAME = "telegram_bot"
-ADMIN_ID = 7582601826
+ADMIN_ID = 7081182827
 START_IMAGE_URL = "https://files.catbox.moe/mtdlde.jpg"
-DEMO_CHANNEL_LINK = "https://t.me/your_channel"
-PROOF_CHANNEL_LINK = "https://t.me/your_channel"
+DEMO_CHANNEL_LINK = "https://t.me/viraldemoclips"
+PROOF_CHANNEL_LINK = "https://t.me/+AHPf2xjlv1hlM2U1"
 SUPPORT_USERNAME = "support"  # Change this to your support username
 
 # Initialize bot
@@ -158,13 +158,13 @@ async def handle_callbacks(client, callback_query: CallbackQuery):
         if data == "contact_support":
             contact_text = (
                 "📞 **Contact Support**\n\n"
-                f"👤 **Username:** @{SUPPORT_USERNAME}\n\n"
+                f"👤 **Username:** @{@sc4med}\n\n"
                 "Click the button below to message support:"
             )
             await message.edit_text(
                 contact_text,
                 reply_markup=InlineKeyboardMarkup([
-                    [InlineKeyboardButton("💬 Message Support", url=f"https://t.me/{SUPPORT_USERNAME}")],
+                    [InlineKeyboardButton("💬 Message Support", url=f"https://t.me/{@sc4med}")],
                     [InlineKeyboardButton("🔙 Back", callback_data="back_to_main")]
                 ])
             )
@@ -193,7 +193,7 @@ async def handle_callbacks(client, callback_query: CallbackQuery):
             caption = (
                 "💰 **Get Premium Access**\n\n"
                 "Pay ₹99 and get access to all premium content!\n\n"
-                "**UPI ID:** yourname@okhdfcbank\n"
+                "**UPI ID:** gpay-12196125264@okbizaxis\n"
                 "**Bank:** Account: XXXX-XXXX-XXXX\n\n"
                 "📸 **Scan QR code below or send payment screenshot**"
             )
